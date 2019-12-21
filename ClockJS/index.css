@@ -1,21 +1,26 @@
 body {
   background-color: #fcfcfc;
 }
-h1 {
+
+body {
   color: #34495e;
-  transition: color 0.5s ease-in-out;
 }
+
 h2 {
   color: #34495e;
   transition: color 0.5s ease-in-out;
 }
+
 .clicked {
   color: #7f8c8d;
 }
+
 .form,
-.greetings {
+.greetings,
+.logout {
   display: none;
 }
+
 .showing {
   display: block;
 }
