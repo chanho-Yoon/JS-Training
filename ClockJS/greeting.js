@@ -16,6 +16,7 @@ function paintNotGreeting() {
   input.classList.add(SHOWING_CN)
 }
 
+function askForName() {
 function loadName() {
   const currentUser = localStorage.getItem(USER_LS)
 
