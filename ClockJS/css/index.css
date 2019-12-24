@@ -1,0 +1,61 @@
+@import '/css/reset.css';
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap&subset=korean');
+
+body {
+  font-family: 'Stylish', sans-serif;
+  color: white;
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #34495e;
+  transition: color 0.5s ease-in-out;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings,
+.logout {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-clock {
+  margin-top: 250px;
+  margin-bottom: 20px;
+}
+.js-clock h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.greetings {
+  font-size: 30px;
+}
