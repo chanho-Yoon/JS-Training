@@ -34,13 +34,16 @@ function askForName() {
 .js-toDoForm,
 .toDoTitle,
 .js-toDoList {
+  animation: fadeIn 1s ease-in-out;
   display: none;
 }
 
 .showing-toDo {
+  animation: fadeIn 1s ease-in-out;
   display: block;
 }
 .showing {
+  animation: fadeIn 1s ease-in-out;
   display: flex;
 }
 
@@ -59,7 +62,7 @@ function askForName() {
   left: 0;
   height: 100vh;
   z-index: -1;
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 .bigScreen {
   position: fixed;
