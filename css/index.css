@@ -1,6 +1,9 @@
-@import '/css/reset.css';
+@import 'reset.css';
 @import url('https://fonts.googleapis.com/css?family=Stylish&display=swap&subset=korean');
-
+@import 'form.css';
+@import 'greetings.css';
+@import 'weather.css';
+@import 'todolist.css';
 body {
   font-family: 'Stylish', sans-serif;
   color: white;
@@ -8,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -18,15 +22,26 @@ h2 {
 .clicked {
   color: #7f8c8d;
 }
+/* 처음 화면에 이름을 입력하기 전까지 안보이도록 함 
+form 입력하는 곳은 greeting.js에서 로그인한 아이디가 없을때 보이도록 설정함
+function askForName() {
+  form.classList.add(SHOWING_CN)
+  form.addEventListener('submit', handleSubmit)
+}*/
 
 .form,
 .greetings,
-.logout {
+.js-toDoForm,
+.toDoTitle,
+.js-toDoList {
   display: none;
 }
 
-.showing {
+.showing-toDo {
   display: block;
+}
+.showing {
+  display: flex;
 }
 
 @keyframes fadeIn {
