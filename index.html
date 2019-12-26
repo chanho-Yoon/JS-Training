@@ -16,15 +16,15 @@
       <input type="text" placeholder="당신의 이름은?" />
     </form>
     <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
+    <form class="js-toDoForm" id="js-toDoForm">
+      <input type="text" placeholder="해야할 목록 작성" />
     </form>
-    <ul class="js-toDoList"></ul>
-
+    <span class="toDoTitle" id="toDoTitle">오늘의 할일</span>
+    <ul class="js-toDoList" id="js-toDoList"></ul>
     <div class="bigScreen">
       <span class="bigScreen__text">화면이 너무 커요!! 화면 줄여주세요.😓</span>
     </div>
-    <span class="js-weather"> </span>
+    <span class="js-weather"></span>
     <script src="js/clock.js"></script>
     <script src="js/greeting.js"></script>
     <script src="js/todo.js"></script>
