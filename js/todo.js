@@ -1,8 +1,11 @@
+const bodyDel = document.querySelector('body')
 const toDoForm = document.querySelector('.js-toDoForm'),
   toDoInput = toDoForm.querySelector('input'),
-  toDoList = document.querySelector('.js-toDoList')
+  toDoList = document.querySelector('.js-toDoList'),
+  toDoTitle = document.querySelector('.toDoTitle')
 
 const TODOS_LS = 'toDos'
+const CURRENT_USER = 'currentUser'
 let toDos = []
 
 function deleteToDo(event) {
@@ -42,6 +45,7 @@ function paintToDo(text) {
 
 function handleSubmit(event) {
   event.preventDefault()
+  console.log('실행됐땅')
   const currentValue = toDoInput.value
   paintToDo(currentValue)
   toDoInput.value = '' //submit처럼 값을 보냈을때 input창에 있는 값 초기화
@@ -56,9 +60,10 @@ function loadToDos() {
     })
   }
 }
+
 function init() {
-  loadToDos()
   //input 태그에 submit 이벤트가 발생했을 경우
+  loadToDos()
   toDoForm.addEventListener('submit', handleSubmit)
 }
 
