@@ -1,0 +1,19 @@
+.form input {
+  height: 30px;
+  width: 200px;
+  border: 1px solid #fcfcfc;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.js-toDoForm input {
+  height: 30px;
+  width: 200px;
+  border: 1px solid #fcfcfc;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
