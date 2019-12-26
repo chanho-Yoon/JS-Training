@@ -1,0 +1,17 @@
+.toDoTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.js-toDoList li {
+  max-width: 300px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+li button {
+  border-radius: 11px;
+  margin-right: 10px;
+  padding-left: 8px;
+}
