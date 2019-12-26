@@ -1,0 +1,10 @@
+.js-weather {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+}
