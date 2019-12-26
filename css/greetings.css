@@ -1,0 +1,12 @@
+.greetings {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.greetings button {
+  border: 1px solid #fcfcfc;
+  border-radius: 11px;
+  margin-left: 10px;
+  padding-left: 8px;
+}
