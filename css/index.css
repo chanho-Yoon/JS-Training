@@ -37,7 +37,7 @@ function askForName() {
   animation: fadeIn 1s ease-in-out;
   display: none;
 }
-
+/* todo list는 block 형식으로 나와야해서 따로 분리 */
 .showing-toDo {
   animation: fadeIn 1s ease-in-out;
   display: block;

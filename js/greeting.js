@@ -1,6 +1,7 @@
 const form = document.querySelector('.js-form'),
   input = form.querySelector('input'),
   greeting = document.querySelector('.js-greetings')
+
 //로그인 했을 시에 form과 title , list가 보여지도록 하기 위한 변수
 const toDoFormShow = document.querySelector('.js-toDoForm'),
   toDoListShow = document.querySelector('.js-toDoList'),
@@ -32,6 +33,7 @@ function saveName(text) {
 //지웠을 때 다시 일부 메뉴 안보이도록
 function removeuser() {
   localStorage.removeItem(USER_LS)
+  greeting.classList.remove(SHOWING_CN)
   toDoFormShow.classList.remove(SHOWING_CN)
   toDoTitleShow.classList.remove(SHOWING_CN)
   toDoListShow.classList.remove(SHOWING_TODO)
